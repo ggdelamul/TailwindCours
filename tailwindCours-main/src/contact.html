@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/28f07fc428.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header class="rounded flex w-screen justify-between p-4 text-slate-800 ">
+  <div class="w-10">
+    <h1 class="text-3xl sm:text-4xl font-bold cursor-pointer dark:text-slate-50">Logo</h1>
+  </div>
+  <nav id="navMenu" class="flex flex-col sm:hidden fixed top-16 left-0 w-screen h-screen bg-slate-50 items-center justify-center scale-y-0 z-10
+            transition-transform duration-300">
+    <li class="list-none mx-1 cursor-pointer  text-2xl text-slate-500"><a href="index.html">Accueil</a></li>
+    <li class="list-none mx-1 cursor-pointer text-2xl text-slate-500"><a href="product.html">Product</a></li>
+    <li class="list-none mx-1 cursor-pointer text-2xl text-slate-500"><a href="pay.html">Pay</a></li>
+    <li class="list-none mx-1 cursor-pointer text-2xl text-slate-500"><a href="contact.html">Contact</a></li>
+  </nav>
+  <nav class="hidden sm:flex">
+    <li class="list-none mx-1 cursor-pointer text-slate-500"><a href="index.html">Accueil</a></li>
+    <li class="list-none mx-1 cursor-pointer text-slate-500"><a href="product.html">Product</a></li>
+    <li class="list-none mx-1 cursor-pointer text-slate-500"><a href="pay.html">Pay</a></li>
+    <li class="list-none mx-1 cursor-pointer text-slate-500"><a href="contact.html">Contact</a></li>
+  </nav>
+  <ul class="w-24 flex justify-between">
+    <li class="sm:hidden">
+      <i class="fa-solid fa-bars  text-yellow-400 cursor-pointer text-3xl" id="burger"></i>
+    </li>
+    <li class="dark:hidden">
+      <i class="fa-solid fa-moon text-yellow-400 cursor-pointer text-3xl" id="moon"></i>
+    </li>
+    <li class="hidden dark:inline-block">
+      <i class="fa-solid fa-sun text-yellow-400 text-3xl cursor-pointer" id="sun">
+      </i>
+    </li>
+  </ul>
+</header>
+  <main>
+    <section class="mb-32 p-4">
+      <form>
+        <div>
+          <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+          <div class="mt-1">
+            <input type="email" id="email"
+              class="peer w-full rounded-md border border-slate-300 px-3 py-2 placeholder-slate-400 shadow-sm invalid:border-pink-500 invalid:text-pink-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+              placeholder="exemple@exemple.fr" />
+            <p class="invisible mt-2 text-sm text-pink-600 peer-invalid:visible">
+              Fournissez un email valide.
+            </p>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="flex justify-around my-32">
+    <ul>
+      <li>Accueil</li>
+      <li>Product</li>
+      <li>Contact</li>
+    </ul>
+    <ul>
+      <li>Mentions</li>
+      <li>Pas content</li>
+      <li>Confidentialité à la google</li>
+    </ul>
+    <ul class="flex gap-4">
+      <li><i class="fa-brands fa-instagram text-3xl"></i></li>
+      <li><i class="fa-brands fa-facebook text-3xl"></i></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

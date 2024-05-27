@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 rounded hover:bg-blue-700  w-24 h-12
+    transition delay-200 duration-300;
+  }
+}
+@layer base {
+  h6 {
+    @apply text-4xl text-red-600;
+  }
+}
